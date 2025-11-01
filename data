@@ -1,1 +1,20 @@
 
+# Data Access and Preparation Guide
+
+This project uses publicly available pharmacogenomic datasets:
+- **CCLE (Cancer Cell Line Encyclopedia)**  
+  Download from: [https://depmap.org/portal/download/](https://depmap.org/portal/download/)
+
+## 📦 Required Files
+You will need:
+1. Gene expression matrix (RNA-seq data)
+2. Drug sensitivity matrix (IC50 values)
+3. Cell line and drug metadata files
+
+## ⚙️ Data Preparation Steps
+1. Download and unzip both datasets into the `/data/` folder.
+
+2. Normalize gene expression using `preprocess.py`:
+   ```bash
+   python data/preprocess.py
+
