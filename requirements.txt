@@ -24,3 +24,7 @@ jsonschema==4.19.0
 # Optional (for notebooks and reproducibility)
 jupyterlab==4.0.5
 notebook==7.0.4
+
+If you used Anaconda, you can also export an environment later:
+
+conda env export > environment.yml
